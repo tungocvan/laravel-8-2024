@@ -1,0 +1,41 @@
+<?php 
+
+namespace Modules\{module}\Policies;
+use App\Models\User;
+use Modules\{module}\Models\{module};
+
+
+use Illuminate\Auth\Access\HandlesAuthorization;
+
+class {module}Policy
+{
+    use HandlesAuthorization;
+ 
+    public function view(User $user)
+    {
+         // true: là cho phép
+        $check = checkPermissions($user,"{module}","view");        
+        return $check;
+    }
+    
+    public function create(User $user)
+    {
+        // true: là cho phép
+        $check = checkPermissions($user,"{module}","create");        
+        return $check;
+    }
+
+    public function update(User $user)
+    {
+        // true: là cho phép 
+        $check = checkPermissions($user,"{module}","update");        
+        return $check;
+    }
+
+    public function delete(User $user)
+    {
+        // true: là cho phép
+        $check = checkPermissions($user,"{module}","delete");        
+        return $check;
+    }    
+}

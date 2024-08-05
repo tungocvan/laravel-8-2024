@@ -1,0 +1,28 @@
+root = /var/www/laravel-8/
+root = /var/www/tnv-php-mysql/source/laravel-8/
+
+auto = true
+batch = true
+confirmbigdel = false
+
+# path = app
+path = routes
+path = app/Console/Commands
+path = modules/Admin
+path = modules/Wordpress
+path = modules/Thuoc
+path = modules/Menu
+path = public/storage/json/menu.json
+path = modules/Test
+path = modules/Help
+path = public/css
+#path = modules/Category
+path = dong-bo.sh
+path = app/Helpers/Functions.php
+path = dong-bo.bat
+path = default.prf
+path = huongda.md
+path = .env
+# path = ten-thu-muc / ten - file -> chi dinh thu muc hoac tap tin can dong bo
+# ignore = Path temp -> bo qua thu muc can dong bo
+# ignore = Name *.tmp -> bo qua tap tin can dong bo
